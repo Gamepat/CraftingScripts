@@ -9,4 +9,4 @@ To stop it hold down the **k** - key.
 
 
 
-[ilmango]: https://www.youtube.com/watch?v=A30Ua7wiCMM&t=152s
+[ilmango]: https://www.youtube.com/watch?v=A30Ua7wiCMM
