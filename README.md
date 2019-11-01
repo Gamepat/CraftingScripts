@@ -8,8 +8,9 @@ These scripts are built for the game running in fullscreen-windowed mode on a 19
 
 To make these scripts work, raw mouse input needs to be turned off which enables the script to control the ingame mouse. (Options / Controls / Mouse Settings / Raw Input: OFF)
 
-Align yourself with the center of the Crafting Table, one block away from it and start the script.
-To stop it hold down the **k** - key.
+* Select the corresponding .py recipe file
+* Align yourself with the center of the Crafting Table, one block away from it and start the script
+* To stop it hold down the **k** - key.
 
 
 
