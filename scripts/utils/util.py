@@ -10,6 +10,9 @@ mouse = Controller()
 
 
 # utilities
+def wait(seconds):
+  time.sleep(seconds)
+
 def rightClick():
   mouse.click(Button.right, 1)
 
@@ -35,11 +38,19 @@ def viewRight():
     pyautogui.move(800, 0)
 
 def exitInv():
+  wait(0.05)
   keyboard.press('e')
   keyboard.release('e')
+  wait(0.05)
 
-def wait(seconds):
-  time.sleep(seconds)
+# this function opens the crafting table for a short moment to reset the view
+# needed for some reason, otherwise the player would turn to far
+def resetView():
+  rightClick()
+  wait(0.1)
+  keyboard.press('e')
+  keyboard.release('e')
+  wait(0.05)
 
 
 # calculates the relative distance between two coordinates
@@ -60,6 +71,4 @@ def move(src, dest):
 
 
 if __name__ == "__main__":
-  x, y = relDist("origin", "output")
-
-  print(x, y)
+  pass
