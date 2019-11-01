@@ -28,7 +28,32 @@ def fillShulker():
   util.exitInv()
 
 
+# craft a recipe with the given slot index in the crafting-book
+def craftSlot(slot):
+  util.move("origin", slot)
+  util.shiftClick()
+  util.wait(0.1)
+  util.move(slot, "output")
+  util.shiftClick()
+  util.wait(0.1)
+  util.move("output", "origin")
+
+
+# take items from left shulker box
+def takeItems():
+  util.resetView()
+  util.viewLeft()
+  emptyShulker()
+  util.viewRight()
+
+# put items into right shulker box
+def dropItems():
+  util.viewRight()
+  fillShulker()
+  util.viewLeft()
+  util.wait(0.2)
+
+
 if __name__ == "__main__":
   util.wait(5)
-  #emptyShulker()
-  fillShulker()
+  pass
