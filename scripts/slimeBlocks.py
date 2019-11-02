@@ -3,6 +3,7 @@ import functions as fc
 import keyboard
 
 key = 'k'
+recipe = 1
 
 
 def craftSlimeBlocks():
@@ -12,9 +13,15 @@ def craftSlimeBlocks():
   
   # recipe-slots can change when restarting the game,
   # so make sure the right slot indexes are selected
-  fc.craftSlot("slime1")
-  fc.craftSlot("slime2")
-  fc.craftSlot("slime2")
+  if recipe == 1:
+    for x in range(3):
+      fc.craftSlot("slime1")
+  
+  elif recipe == 2:
+    fc.craftSlot("slime1")
+    fc.craftSlot("slime2")
+    fc.craftSlot("slime2")
+  
   util.exitInv()
   fc.dropItems()
 
