@@ -1,6 +1,6 @@
 # collection of functions that are used for nearly every recipe
 
-import utils.util as util
+import scripts.utils.util as util
 
 
 # take everything from a full shulkerbox

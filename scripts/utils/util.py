@@ -1,4 +1,4 @@
-import utils.coords as cr
+import scripts.utils.coords as cr
 import keyboard
 import pyautogui
 from pynput.mouse import Button, Controller

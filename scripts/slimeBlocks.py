@@ -1,5 +1,5 @@
-import utils.util as util
-import functions as fc
+import scripts.utils.util as util
+import scripts.functions as fc
 import keyboard
 
 key = 'k'
